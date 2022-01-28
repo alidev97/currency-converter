@@ -1,0 +1,11 @@
+.swapper {
+  display: flex;
+  align-items: center;
+
+  & {
+    .anticon-swap {
+      font-size: 50px;
+    }
+  }
+}
+

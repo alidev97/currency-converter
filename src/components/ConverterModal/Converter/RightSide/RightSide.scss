@@ -1,0 +1,14 @@
+.rightSide {
+
+  & .result {
+    height: 115px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    font-size: 30px;
+    padding: 10px 20px;
+
+    & .dot {
+      color: red;
+    }
+  }
+}

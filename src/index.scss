@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 5px 0;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  border: unset;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+}
+
+@mixin leftRight {
+  width: 45%;
+
+  & h3 {
+    color: red
+  }
+
+  & .btnActions {
+    display: flex;
+    justify-content: space-between;
+
+    & label {
+      width: 33%;
+      text-align: center;
+    }
+  }
+
+}
+
+.leftSide, .rightSide {
+  @include leftRight
+}
